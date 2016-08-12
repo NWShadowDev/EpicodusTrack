@@ -19,7 +19,7 @@
 body {
   background-image:url(../img/computer.jpg);
   background-repeat: no-repeat;
-  background-color: black;
+/*  background-color: black;*/
 }
 
 .container{
@@ -42,17 +42,6 @@ h4 {
   margin-left: auto;
   margin-right: auto;
 }
-
-#designTrack {
+#designTrack, #programmerTrack {
   display:none;
-  color: white;
-}
-
-#programmerTrack {
-  display:none;
-  color: white;
-}
-
-p {
-  color: white;
 }

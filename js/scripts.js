@@ -1,8 +1,6 @@
 $(document).ready(function() {
-
-$("form").submit(function(event){
-
-  alert ("STOP!");
+//alert ("STOP!");
+$("form").onClick.submit(function(event){
 
   var nameDisplay = $("#nameDisplay").val();
   var design = parseInt($("#design").val());
@@ -12,14 +10,14 @@ $("form").submit(function(event){
   var enviro = parseInt($("#enviro").val());
   var successRate = design + interAct + company + language + enviro;
 
-  if(successRate <= 5) {
+  if(successRate >= 5) {
     $("#designTrack").show();
+    
 
   }else{
     $("#programmerTrack").show();
+
   }
-$("#designTrack").text(designTrack);
-$("#programmerTrack").text(programmerTrack);
   event.preventDefault();
 });
 });
