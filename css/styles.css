@@ -19,7 +19,7 @@
 body {
   background-image:url(../img/computer.jpg);
   background-repeat: no-repeat;
-/*  background-color: black;*/
+  background-color: black;
 }
 
 .container{
@@ -39,9 +39,14 @@ h4 {
 
 .btn {
   display:block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
 }
-#designTrack, #programmerTrack {
+#designTrack, #programmerTrack{
   display:none;
+  margin: 3rem auto;
+  font-size: medium;
+  width: 80%;
+  padding: 2rem;
+  border: 3px solid black;
+  font-weight: bold;
 }

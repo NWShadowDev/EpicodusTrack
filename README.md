@@ -16,7 +16,9 @@ https://nwshadowdev.github.io/EpicodusTrack
 
 ## Known Bugs
 
-_Jumbotron BG image transparency works, but h1 text is still transparent_
+_Cannot get name variable to show up on return of result (left one example in the HTML to show code and left it in .js file even though it doesn't work._
+
+_Wanted to implement the third track in an "if else" statement but not sure how to place the variable_
 
 ## Support and contact details
 
