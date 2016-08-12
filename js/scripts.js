@@ -1,12 +1,15 @@
 $(document).ready(function() {
-  //debugger;
+
 $("form").submit(function(event){
+
+  alert ("STOP!");
+
   var nameDisplay = $("#nameDisplay").val();
   var design = parseInt($("#design").val());
   var interAct = parseInt($("#interAct").val());
   var company = parseInt($("#company").val());
   var language = parseInt($("#language").val());
-  var enviro = parseInt($("#enviro"));
+  var enviro = parseInt($("#enviro").val());
   var successRate = design + interAct + company + language + enviro;
 
   if(successRate <= 5) {
@@ -15,7 +18,8 @@ $("form").submit(function(event){
   }else{
     $("#programmerTrack").show();
   }
-
+$("#designTrack").text(designTrack);
+$("#programmerTrack").text(programmerTrack);
   event.preventDefault();
 });
 });

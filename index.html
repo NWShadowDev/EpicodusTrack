@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <title>Epicodus Track Survey!</title>
   </head>
+  <!--Body starts here-->
   <body>
     <div class="jumbotron">
     </div>
     <!--Name entry start-->
+      <!--container starts here-->
     <div class="container">
-        <form>
+        <form> <!--Survey Form Starts here-->
           <div class="form-group col-xs-3">
             <label for="nameDisplay">First and Last Name:</label>
             <input type="text" class="form-control" id="nameDisplay" placeholder="John Doe">
@@ -36,6 +38,7 @@
         </div>
       </div>
         <!--</Question1>-->
+        <!--Question 2-->
         <div class="container">
         <h4>Do you ever wonder how websites are made interactive?</h4>
             <div class="radio">
@@ -51,6 +54,8 @@
             </label>
           </div>
         </div>
+        <!--</Question2>-->
+        <!--Question 3-->
         <div class="container">
           <h4>Which company would you rather work for?</h4>
           <select class="form-control" id="company">
@@ -62,6 +67,8 @@
             <option value="1">Apple</option>
           </select>
         </div>
+        <!--</Question3>-->
+        <!--Question 4-->
         <div class="container">
           <h4>Which of the following languages have you learned in the past or are currently learning?</h4>
           <h5>(<em><strong>Hint</strong></em>: Pick which one you know the best)</h5>
@@ -74,6 +81,8 @@
             <option value="2">Java</option>
           </select>
         </div>
+        <!--</Question4>-->
+        <!--Question 5-->
         <div class ="container">
           <h4>What kind of environment would you prefer to work in?</h4>
           <select class="form-control" id="enviro">
@@ -83,8 +92,10 @@
           </select>
             <p><strong><em>Survey created by: Amber Farrigton @ Epicodus 2016</em></strong></p>
         </div>
-        </form>
+        <!--</Question5>-->
+      </form><!--Survey Form Ends here-->
       </div>
+      <!--container ends here-->
         <div class="btn container">
         <button type="submit" class="btn btn-danger btn-lg">SUBMIT!</button>
       </div>
