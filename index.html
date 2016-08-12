@@ -2,9 +2,99 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+    <title>Epicodus Track Survey!</title>
   </head>
   <body>
-
+    <div class="jumbotron">
+    </div>
+    <!--Name entry start-->
+    <div class="container">
+        <form>
+          <div class="form-group col-xs-3">
+            <label for="nameDisplay">First and Last Name:</label>
+            <input type="text" class="form-control" id="nameDisplay" placeholder="John Doe">
+          </div>
+      <!--Name entry end-->
+      <!--Question 1-->
+      <div class="container">
+      <h4>Do you like well-decorated websites?</h4>
+          <div class="radio">
+          <label>
+            <input type="radio" name="design" id="design" value="1">
+            Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="design" id="design" value="2">
+            No
+          </label>
+        </div>
+      </div>
+        <!--</Question1>-->
+        <div class="container">
+        <h4>Do you ever wonder how websites are made interactive?</h4>
+            <div class="radio">
+            <label>
+              <input type="radio" name="interAct" id="interAct" value="1">
+              Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="interAct" id="interAct" value="2">
+              No
+            </label>
+          </div>
+        </div>
+        <div class="container">
+          <h4>Which company would you rather work for?</h4>
+          <select class="form-control" id="company">
+            <option value="2">Microchip</option>
+            <option value="2">Microsoft</option>
+            <option value="1">Blizzard Entertainment (Design Team)</option>
+            <option value="1">Disney</option>
+            <option value="2">Intel</option>
+            <option value="1">Apple</option>
+          </select>
+        </div>
+        <div class="container">
+          <h4>Which of the following languages have you learned in the past or are currently learning?</h4>
+          <h5>(<em><strong>Hint</strong></em>: Pick which one you know the best)</h5>
+          <select class="form-control" id="language">
+            <option value="2">PHP</option>
+            <option value="2">Drupal</option>
+            <option value="1">Javascript</option>
+            <option value="1">CSS</option>
+            <option value="1">Ruby</option>
+            <option value="2">Java</option>
+          </select>
+        </div>
+        <div class ="container">
+          <h4>What kind of environment would you prefer to work in?</h4>
+          <select class="form-control" id="enviro">
+            <option value="2">Corporate Office</option>
+            <option value="1">Intimate Development Team (4-6 people)</option>
+            <option value="1">Telecommute/Solo contractor</option>
+          </select>
+            <p><strong><em>Survey created by: Amber Farrigton @ Epicodus 2016</em></strong></p>
+        </div>
+        </form>
+      </div>
+        <div class="btn container">
+        <button type="submit" class="btn btn-danger btn-lg">SUBMIT!</button>
+      </div>
+      <div class = "container">
+        <div id="designTrack">
+        <p><span class="nameDisplay"></span>, You were meant for the Design Track of Epicodus which means you are a Front-End Developer! You spend time making things look and work well, obsess over layouts, navigation, colors, and design! The classes you will be taking after your Intro class will be: CSS and Design!</p>
+        </div>
+        <div id ="programmerTrack">
+        <p><span class="nameDisplay"></span>, You were meant for the Programmer Track of Epicodus which means you are a Back-End Developer! You focus more on the behind the scenes programming which is centered around how the site works PERIOD! You will often switch languages as you change jobs, or even as you build different types of software at the same job. The classes you should take after your mandatory Intro class are: C#,Java,PHP, and Ruby on Rails. </p>
+        </div>
+      </div>
   </body>
 </html>

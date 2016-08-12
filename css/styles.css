@@ -1,0 +1,58 @@
+
+.jumbotron {
+  height: 200px;
+  width: 1200px;
+  background-size: 1200px 250px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-image: url(../img/prog-languages.jpg);
+  border: solid black;
+  border-width: 3px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+}
+
+.form-group, .form-control {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body {
+  background-image:url(../img/computer.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.container{
+  display:block;
+  float: left;
+  margin-left: 10px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bolder;
+}
+
+.btn {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#designTrack {
+  display:none;
+  color: white;
+}
+
+#programmerTrack {
+  display:none;
+  color: white;
+}
+
+p {
+  color: white;
+}
