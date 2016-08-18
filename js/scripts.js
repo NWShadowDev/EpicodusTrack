@@ -7,28 +7,55 @@ $("form").submit(function(event){
   var company =parseInt($("#company").val());
   var language = parseInt($("#language").val());
   var enviro = parseInt($("#enviro").val());
-  var successRate = design + interAct + company + language + enviro;
 
-  var counter = 0;
+
   var designCounter;
   var javaCounter;
   var phpCounter;
 
-
-    if (design === 2 && interAct === 2) {
+    if (design = 2) {
       designCounter++;
-    } else if (design === 1 ) {
+    } else if (design = 1 ) {
       javaCounter++;
-    } else (interAct ===1  && design === 1)
+    } else (design = 1)
       phpCounter++;
 
-  if(successRate <= 5) {
+    if (interAct = 2) {
+      designCounter++;
+    } else if (interAct = 1) {
+      javaCounter++;
+    } else (interAct = 1)
+        phpCounter++;
+
+      if (company = 2 ) {
+          designCounter++;
+      } else if (company = 1) {
+        javaCounter++;
+      } else (company = 1)
+            phpCounter++;
+
+      if (language = 2) {
+        designCounter++;
+      } else if (language = 1) {
+        javaCounter++;
+      } else (language = 1)
+            phpCounter++;
+});
+      if (enviro = 2) {
+        designCounter++;
+      } else if (enviro = 1) {
+        javaCounter++;
+      } else (enviro === 1)
+        phpCounter++;
+
+  if(designCounter <= 10) {
     $("#designCSSTrack").show();
+    else if (javaCounter <=5) {
+   $("#phpDrupTrack").show();
 
   }else{
     $("#javaAndroidTrack").show();
   }
-
   event.preventDefault();
 });
 });
