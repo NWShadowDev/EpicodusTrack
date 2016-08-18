@@ -15,7 +15,7 @@
     <form>
       <div class="form-group">
         <label for="nameDisplay">First and Last Name:</label>
-        <input type="text" class="form-control" id="nameDisplay" placeholder="John Doe">
+        <input type="text" class="form-control nameDisplay" placeholder="John Doe">
       </div>
       <h4>Do you like well-decorated websites?</h4>
       <div class="radio">
@@ -33,13 +33,13 @@
       <h4>Do you ever wonder how websites are made interactive?</h4>
       <div class="radio">
         <label>
-          <input type="radio" name="interAct" id="PvE" value="2">
+          <input type="radio" name="interAct" id="interAct" value="1">
           Yes
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="interAct" id="PvP" value="1">
+          <input type="radio" name="interAct" id="interAct" value="2">
           No
         </label>
       </div>
@@ -47,8 +47,8 @@
       <select class="form-control" id="company">
         <option value="1">Microchip</option>
         <option value="2">Microsoft</option>
-        <option value="1">Blizzard Entertainment (design team)</option>
-        <option value="2">Intel</option>
+        <option value="2">Blizzard Entertainment (design team)</option>
+        <option value="1">Intel</option>
         <option value="2">Disney</option>
         <option value="1">Apple</option>
       </select>
@@ -56,17 +56,18 @@
       <h5>(<strong>Hint</strong>:Pick which one you know the best)</h5>
       <select class="form-control" id="language">
         <option value="1">Drupal</option>
-        <option value="1">Javascript</option>
+        <option value="2">Javascript</option>
         <option value="2">CSS</option>
         <option value="1">PHP</option>
-        <option value="2">Ruby</option>
-        <option value="2">Java</option>
+        <option value="1">Ruby</option>
+        <option value="1">Java</option>
       </select>
       <h4>What kind of environment would you prefer to work in?</h4>
       <select class="form-control" id="enviro">
+        <option value ="1">Freelance Web App Development Company</option>
         <option value ="1">Corporate Business Office</option>
         <option value="2">Intimate Dev Team (4-6 people)</option>
-        <option value="3">Telecommute/Solo Contractor</option>
+        <option value="2">Telecommute/Solo Contractor</option>
       </select>
       <button type="submit" class="btn btn-info btn-lg">Which Track?</button>
     </form>
@@ -76,11 +77,11 @@
       </div>
       <div id="javaAndroidTrack">
         <!--Known bug, See README-->
-        <p><!--<span class="nameDisplay"></span>,--> You were meant for the Programmer Track of Epicodus which means you are interested in the front-end MCV paradigm that powers many real-world web applications. </p>
+        <p><span class="nameDisplay"></span>, You were meant for the Programmer Track of Epicodus which means you are interested in the front-end MCV paradigm that powers many real-world web applications. </p>
       </div>
       <div id="phpDrupTrack">
         <!--Known bug, See README-->
-        <p><!--<span class="nameDisplay"></span>,--> You should sign up for the PHP/Drupal Track! PHP builds on the programming fundamentals from Intro and gives students more difficult problems to solve, a more advanced set of tools to solve them with, and establishes the foundations for learning the real-world technologies used by programmers on the job. Your track class list would be: Intro (which is mandatory for all Epicodus full-time students), PHP, JavaScript, and Drupal. For Drupal, you have to take PHP and JavaScript and it introduces students to the Drupal framework used by companies like Sony. Both of these classes are typically used to build content-focused websites. </p>
+        <p><span class="nameDisplay"></span>, You should sign up for the PHP/Drupal Track! PHP builds on the programming fundamentals from Intro and gives students more difficult problems to solve, a more advanced set of tools to solve them with, and establishes the foundations for learning the real-world technologies used by programmers on the job. Your track class list would be: Intro (which is mandatory for all Epicodus full-time students), PHP, JavaScript, and Drupal. For Drupal, you have to take PHP and JavaScript and it introduces students to the Drupal framework used by companies like Sony. Both of these classes are typically used to build content-focused websites. </p>
       </div>
     </div>
     </div><!--end container-->

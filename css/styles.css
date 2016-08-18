@@ -41,7 +41,7 @@ h4 {
   display:block;
   margin: 0;
 }
-#designTrack, #programmerTrack{
+#designCSSTrack, #javaAndroidTrack, #phpDrupTrack{
   display:none;
   margin: 3rem auto;
   font-size: medium;
