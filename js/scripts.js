@@ -1,61 +1,62 @@
 $(document).ready(function() {
 $("form").submit(function(event){
 
-  var nameDisplay = $(".nameDisplay").val();
+  var name = $(".nameDisplay").val();
   var design = parseInt($("#design").val());
   var interAct = parseInt($("#interAct").val());
   var company =parseInt($("#company").val());
   var language = parseInt($("#language").val());
   var enviro = parseInt($("#enviro").val());
+  $(".nameDisplay").text(name);
 
 
-  var designCounter;
-  var javaCounter;
-  var phpCounter;
+  var designCounter = 0;
+  var javaCounter = 0;
+  var phpCounter = 0;
 
-    if (design = 2) {
+  if (design === 1) {
       designCounter++;
-    } else if (design = 1 ) {
+    } else {
       javaCounter++;
-    } else (design = 1)
       phpCounter++;
+    }
 
-    if (interAct = 2) {
+    if (interAct === 1) {
+        designCounter++;
+      } else {
+        javaCounter++;
+        phpCounter++;
+      }
+
+      if (company === 1) {
       designCounter++;
-    } else if (interAct = 1) {
+    } else {
       javaCounter++;
-    } else (interAct = 1)
-        phpCounter++;
+      phpCounter++;
+    }
 
-      if (company = 2 ) {
-          designCounter++;
-      } else if (company = 1) {
-        javaCounter++;
-      } else (company = 1)
-            phpCounter++;
-
-      if (language = 2) {
+    if (language === 1) {
         designCounter++;
-      } else if (language = 1) {
+      } else {
         javaCounter++;
-      } else (language = 1)
-            phpCounter++;
-});
-      if (enviro = 2) {
-        designCounter++;
-      } else if (enviro = 1) {
-        javaCounter++;
-      } else (enviro === 1)
         phpCounter++;
+      }
+
+      if (enviro === 1) {
+      designCounter++;
+    } else {
+      javaCounter++;
+      phpCounter++;
+    }
 
   if(designCounter <= 10) {
-    $("#designCSSTrack").show();
-    else if (javaCounter <=5) {
+    $("#designCSSTrack").slideDown();
+  }else if (javaCounter <=5) {
    $("#phpDrupTrack").show();
-
   }else{
     $("#javaAndroidTrack").show();
   }
+
   event.preventDefault();
 });
 });

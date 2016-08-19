@@ -1,4 +1,4 @@
-
+/*CSS Class Styles*/
 .jumbotron {
   height: 200px;
   width: 1200px;
@@ -16,10 +16,10 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
-body {
-  background-image:url(../img/computer.jpg);
-  background-repeat: no-repeat;
-  background-color: black;
+
+.btn {
+  display:block;
+  margin: 0;
 }
 
 .container{
@@ -27,6 +27,14 @@ body {
   float: left;
   margin-left: 10px;
 }
+
+/*CSS basic element Styles*/
+body {
+  background-image:url(../img/computer.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
 
 label {
   font-size: 20px;
@@ -36,11 +44,7 @@ label {
 h4 {
   font-weight: bolder;
 }
-
-.btn {
-  display:block;
-  margin: 0;
-}
+/*CSS ID Styles*/
 #designCSSTrack, #javaAndroidTrack, #phpDrupTrack{
   display:none;
   margin: 3rem auto;
