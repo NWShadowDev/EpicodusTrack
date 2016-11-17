@@ -10,15 +10,13 @@ _This project has the user take a survey which determines their track in the Epi
 
 ## Setup/Installation Requirements
 
-* _Have Access to the internet to click the .io link for the project_
-https://nwshadowdev.github.io/EpicodusTrack
+* _Have Access to the internet_
+* _Click the project link to view live! [Epicodus Track Suggester](https://nwshadowdev.github.io/EpicodusTrack)_
 
 
 ## Known Bugs
 
-_Cannot get name variable to show up on return of result (left one example in the HTML to show code and left it in .js file even though it doesn't work._
-
-_Wanted to implement the third track in an "if else" statement but not sure how to place the variable_
+_None at this time!_
 
 ## Support and contact details
 
@@ -30,6 +28,11 @@ amberf0712@outlook.com_
 _Git Hub_
 _ATOM (Text Editor)_
 _Git Bash for Windows_
+_HTML 5_
+_CSS 3_
+_Javascript_
+_jQuery_
+
 
 ### License
 https://nwshadowdev.github.io/EpicodusTrack/
